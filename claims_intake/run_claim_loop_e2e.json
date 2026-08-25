@@ -1,0 +1,9 @@
+{
+  "run_id": "claims-loop-001",
+  "token_count": 1820,
+  "trace": [
+    {"turn": 1, "stop_reason": "tool_use", "tool_name": "search_claims"},
+    {"turn": 2, "stop_reason": "end_turn", "route": "escalate_to_human"}
+  ],
+  "outcome": "routing_and_escalation_boundaries_verified"
+}

@@ -1,0 +1,4 @@
+[
+  {"turn": 1, "stop_reason": "tool_use"},
+  {"turn": 2, "stop_reason": "end_turn"}
+]
