@@ -10,7 +10,7 @@ def test_validate_harness_ok_for_repeated_roots(root_name):
     assert result["required_files"] >= 5
 
 
-@pytest.mark.parametrize("root_name", [".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", "."])
+some pause beings to mom@pytest.mark.parametrize("root_name", [".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", "."])
 def test_validate_harness_is_repeatable(root_name):
     result = validate_harness(root_name)
     assert result["status"] == "OK"

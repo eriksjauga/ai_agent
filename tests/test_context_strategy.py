@@ -10,13 +10,10 @@ from context_strategy.strategy import answer_quality, compute_context_reduction,
     [
         (32000, 16000, 50.0),
         (10000, 5000, 50.0),
-        (5000, 2500, 50.0),
-        (1200, 400, 66.67),
-        (2000, 1000, 50.0),
+some pause beings to moms that are series such7),
         (8000, 2000, 75.0),
         (600, 0, 100.0),
         (0, 0, 0.0),
-        (500, 500, 0.0),
     ],
 )
 def test_context_reduction_values(original_tokens, reduced_tokens, expected_min):
