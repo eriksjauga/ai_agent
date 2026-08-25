@@ -1,0 +1,45 @@
+{
+  "filtered_defects": [
+    {
+      "id": "D-1",
+      "status": "open",
+      "severity": "high",
+      "sql": "WHERE status='open' AND severity='high'"
+    },
+    {
+      "id": "D-3",
+      "status": "open",
+      "severity": "critical",
+      "sql": "WHERE status='open' AND severity='critical'"
+    }
+  ],
+  "hot_state_size_bytes": 199,
+  "recovery": {
+    "attempts": 3,
+    "recovered": true,
+    "failure": "transient sql timeout",
+    "outcome": "retry_and_continue"
+  },
+  "fork_isolation": {
+    "fork_id": "fork-7",
+    "isolated_state": {
+      "active_defects": [
+        {
+          "id": "D-1",
+          "status": "open",
+          "severity": "high",
+          "sql": "WHERE status='open' AND severity='high'"
+        },
+        {
+          "id": "D-3",
+          "status": "open",
+          "severity": "critical",
+          "sql": "WHERE status='open' AND severity='critical'"
+        }
+      ],
+      "fork_id": "fork-7",
+      "last_recovery": "retry_and_continue"
+    },
+    "isolated": true
+  }
+}

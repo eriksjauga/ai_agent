@@ -12,7 +12,8 @@ def compute_context_reduction(original_tokens: int, reduced_tokens: int) -> floa
     if original_tokens <= 0:
         return 0.0
     reduction = ((original_tokens - reduced_tokens) / original_tokens) * 100.0
-    return max(0.0, min(100.0, reduction))
+    reduction = round(max(0.0, min(100.0, reduction)), 2)
+    return reduction
 
 
 def answer_quality(results: Iterable[Dict[str, Any]]) -> Dict[str, Any]:

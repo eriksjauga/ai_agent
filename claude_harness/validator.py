@@ -7,7 +7,7 @@ from pathlib import Path
 
 def validate_harness(root: str | Path) -> dict:
     """Validate mandatory root config and .claude structure."""
-    root_path = Path(root)
+    root_path = Path(root).resolve()
     required = [
         root_path / 'CLAUDE.md',
         root_path / '.claude' / 'rules' / 'core.md',
@@ -28,4 +28,5 @@ def validate_harness(root: str | Path) -> dict:
         'root': str(root_path),
         'required_files': len(required),
         'missing': missing,
+        'required': [str(path.relative_to(root_path)) for path in required],
     }

@@ -1,0 +1,7 @@
+{
+  "token_budget": 16000,
+  "baseline_tokens": 32000,
+  "context_reduction_pct": 50.0,
+  "max_context_tokens": 16000,
+  "strategy": "summarize_then_answer"
+}
